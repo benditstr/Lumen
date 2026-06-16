@@ -1,0 +1,21 @@
+appId: com.benstr.lumen
+productName: Lumen
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**
+  - package.json
+electronLanguages:
+  - en
+mac:
+  category: public.app-category.productivity
+  icon: build/icon.icns
+  target:
+    - target: dir
+      arch: arm64
+    - target: dmg
+      arch: arm64
+  # Unsigned local build: keep Gatekeeper relaxed for personal use.
+  identity: null
+npmRebuild: false

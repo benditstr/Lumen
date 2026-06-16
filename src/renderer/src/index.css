@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: theme('fontFamily.sans');
+}
+
+/* Frameless window drag regions */
+.drag-region {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Attachment embeds rendered inside the markdown preview */
+.lumen-embed-img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #2e2e2e;
+}
+
+.lumen-pdf-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  background: #222222;
+  color: #e8e8e6 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.lumen-pdf-card:hover {
+  background: #2a2a2a;
+}
+
+/* Internal [[wikilinks]] in the markdown preview */
+.lumen-wikilink {
+  color: #a78bfa !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.35);
+  cursor: pointer;
+}
+.lumen-wikilink:hover {
+  border-bottom-color: #a78bfa;
+}

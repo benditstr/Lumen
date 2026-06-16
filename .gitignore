@@ -1,0 +1,12 @@
+node_modules
+dist
+out
+.DS_Store
+*.log
+.vite
+
+# Local, machine-specific Claude Code settings
+.claude/settings.local.json
+
+# Intermediate icon build folder (icon.icns is kept, it's needed for packaging)
+build/icon.iconset
